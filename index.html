@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Interactive rating component</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="px-7 bg-VeryDarkBlue min-h-screen flex items-center justify-center">
+        <div
+            class="rating-box max-w-[414px] sm:w-[414px] gap-[28px]  flex-col p-7 sm:p-8 bg-DarkBlue rounded-[15px]">
+            <img class="rating-star bg-gray-2 w-fit rounded-full p-4" src="./images/icon-star.svg" alt="">
+            <h1 class="text-White text-3xl leading-[0px] mt-[13px] sm:mt-[17px]  font-medium"> How did we do?
+            </h1>
+            <p class="text-LightGrey  mt-[3px] sm:mt-[7px]">
+                Please let us know how we did with your support request. All
+                feedback is
+                appreciated
+                to help us improve our offering!
+            </p>
+            <div class="rating-items flex justify-between">
+                <button
+                    class="rating-btn rounded-full text-LightGrey font-medium bg-gray-2 sm:h-[50px] sm:w-[50px] h-[40px] w-[40px]">1</button>
+                <button
+                    class="rating-btn rounded-full text-LightGrey font-medium bg-gray-2 sm:h-[50px] sm:w-[50px] h-[40px] w-[40px]">2</button>
+                <button
+                    class="rating-btn rounded-full text-LightGrey font-medium bg-gray-2 sm:h-[50px] sm:w-[50px] h-[40px] w-[40px]">3</button>
+                <button
+                    class="rating-btn rounded-full text-LightGrey font-medium active bg-gray-2 sm:h-[50px] sm:w-[50px] h-[40px] w-[40px]">4</button>
+                <button
+                    class="rating-btn rounded-full text-LightGrey font-medium  bg-gray-2 sm:h-[50px] sm:w-[50px] h-[40px] w-[40px]">5</button>
+            </div>
+            <button class="submit-btn py-2 sm:py-3  font-medium rounded-3xl text-White uppercase">Submit</button>
+        </div>
+        <div
+            class="thankyou-box  max-w-[414px] text-center sm:w-[414px] items-center flex-col p-7 sm:p-8 bg-DarkBlue rounded-[15px]">
+            <img src="./images/illustration-thank-you.svg" alt="">
+            <p class="mt-[28px] sm:mt-[32px] bg-gray-2 rounded-3xl text-Orange px-6 pt-1.5 pb-1 text-sm">You selected
+                <span class="rating-status"></span>
+                out of 5</p>
+            <h1 class="text-White text-[28px] mt-[28px] sm:mt-[32px] font-medium"> Thank You
+            </h1>
+            <p class="text-LightGrey sm:mt-[3px]"> We appreciate you taking the time to give a rating. If you ever need
+                more support,
+                don’t hesitate to get in touch!
+            </p>
+        </div>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
